@@ -1,0 +1,1497 @@
+{
+  "info": {
+    "_postman_id": "adb53f45-e23e-41a5-aaf6-c285cca99c9c",
+    "name": "E-Commerce.API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "47954307",
+    "_collection_link": "https://go.postman.co/collection/47954307-adb53f45-e23e-41a5-aaf6-c285cca99c9c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "api",
+      "item": [
+        {
+          "name": "Authentication",
+          "item": [
+            {
+              "name": "login",
+              "item": [
+                {
+                  "name": "/api/Authentication/login",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"email\": \"string\",\n  \"password\": \"string\"\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Authentication/login",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Authentication",
+                        "login"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"email\": \"string\",\n  \"password\": \"string\"\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Authentication/login",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Authentication",
+                            "login"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"displayName\": \"string\",\n  \"email\": \"string\",\n  \"token\": \"string\"\n}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Register",
+              "item": [
+                {
+                  "name": "/api/Authentication/Register",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"username\": \"string\",\n  \"displayName\": \"string\",\n  \"phoneNumber\": \"string\"\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Authentication/Register",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Authentication",
+                        "Register"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"username\": \"string\",\n  \"displayName\": \"string\",\n  \"phoneNumber\": \"string\"\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Authentication/Register",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Authentication",
+                            "Register"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"displayName\": \"string\",\n  \"email\": \"string\",\n  \"token\": \"string\"\n}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "emailExists",
+              "item": [
+                {
+                  "name": "/api/Authentication/emailExists",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Authentication/emailExists?email=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Authentication",
+                        "emailExists"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Authentication/emailExists?email=string",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Authentication",
+                            "emailExists"
+                          ],
+                          "query": [
+                            {
+                              "key": "email",
+                              "value": "string"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "false"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "currentUser",
+              "item": [
+                {
+                  "name": "/api/Authentication/currentUser",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Authentication/currentUser?email=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Authentication",
+                        "currentUser"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Authentication/currentUser?email=string",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Authentication",
+                            "currentUser"
+                          ],
+                          "query": [
+                            {
+                              "key": "email",
+                              "value": "string"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"displayName\": \"string\",\n  \"email\": \"string\",\n  \"token\": \"string\"\n}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "address",
+              "item": [
+                {
+                  "name": "/api/Authentication/address",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Authentication/address?email=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Authentication",
+                        "address"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Authentication/address?email=string",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Authentication",
+                            "address"
+                          ],
+                          "query": [
+                            {
+                              "key": "email",
+                              "value": "string"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"street\": \"string\",\n  \"city\": \"string\",\n  \"countery\": \"string\"\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Authentication/address",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"street\": \"string\",\n  \"city\": \"string\",\n  \"countery\": \"string\"\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Authentication/address?email=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Authentication",
+                        "address"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"street\": \"string\",\n  \"city\": \"string\",\n  \"countery\": \"string\"\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Authentication/address?email=string",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Authentication",
+                            "address"
+                          ],
+                          "query": [
+                            {
+                              "key": "email",
+                              "value": "string"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"street\": \"string\",\n  \"city\": \"string\",\n  \"countery\": \"string\"\n}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cart",
+          "item": [
+            {
+              "name": "{id}",
+              "item": [
+                {
+                  "name": "/api/Cart/:id",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Cart/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Cart",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Cart/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Cart",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "string"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"id\": \"string\",\n  \"items\": [\n    {\n      \"id\": 5978,\n      \"name\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 4.599239794026192e+306,\n      \"quantity\": 64\n    },\n    {\n      \"id\": 8889,\n      \"name\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 5.637903288851573e+307,\n      \"quantity\": 98\n    }\n  ],\n  \"clientSecret\": \"string\",\n  \"paymentIntentId\": \"string\",\n  \"deliveryMethodId\": 1935,\n  \"shippingPrice\": 3347.2222801469375\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Cart/:id",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Cart/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Cart",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "DELETE",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Cart/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Cart",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "string"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "false"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "/api/Cart",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"id\": \"string\",\n  \"items\": [\n    {\n      \"id\": 5978,\n      \"name\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 4.599239794026192e+306,\n      \"quantity\": 64\n    },\n    {\n      \"id\": 8889,\n      \"name\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 5.637903288851573e+307,\n      \"quantity\": 98\n    }\n  ],\n  \"clientSecret\": \"string\",\n  \"paymentIntentId\": \"string\",\n  \"deliveryMethodId\": 1935,\n  \"shippingPrice\": 3347.2222801469375\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/Cart",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Cart"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"id\": \"string\",\n  \"items\": [\n    {\n      \"id\": 5978,\n      \"name\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 4.599239794026192e+306,\n      \"quantity\": 64\n    },\n    {\n      \"id\": 8889,\n      \"name\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 5.637903288851573e+307,\n      \"quantity\": 98\n    }\n  ],\n  \"clientSecret\": \"string\",\n  \"paymentIntentId\": \"string\",\n  \"deliveryMethodId\": 1935,\n  \"shippingPrice\": 3347.2222801469375\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Cart",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Cart"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"id\": \"string\",\n  \"items\": [\n    {\n      \"id\": 5978,\n      \"name\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 4.599239794026192e+306,\n      \"quantity\": 64\n    },\n    {\n      \"id\": 8889,\n      \"name\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 5.637903288851573e+307,\n      \"quantity\": 98\n    }\n  ],\n  \"clientSecret\": \"string\",\n  \"paymentIntentId\": \"string\",\n  \"deliveryMethodId\": 1935,\n  \"shippingPrice\": 3347.2222801469375\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Order",
+          "item": [
+            {
+              "name": "deliveryMethods",
+              "item": [
+                {
+                  "name": "/api/Order/deliveryMethods",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Order/deliveryMethods",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Order",
+                        "deliveryMethods"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Order/deliveryMethods",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Order",
+                            "deliveryMethods"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "[\n  {\n    \"id\": 9254,\n    \"shortName\": \"string\",\n    \"description\": \"string\",\n    \"deliveryTime\": \"string\",\n    \"cost\": 2440.9605287866775\n  },\n  {\n    \"id\": 7464,\n    \"shortName\": \"string\",\n    \"description\": \"string\",\n    \"deliveryTime\": \"string\",\n    \"cost\": 9133.742118494896\n  }\n]"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "{id}",
+              "item": [
+                {
+                  "name": "/api/Order/:id",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Order/:id?email=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Order",
+                        ":id"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "string"
+                        }
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "4b9407be-0fca-552b-7678-d4dd66f010f8"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Order/:id?email=string",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Order",
+                            ":id"
+                          ],
+                          "query": [
+                            {
+                              "key": "email",
+                              "value": "string"
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "4b9407be-0fca-552b-7678-d4dd66f010f8"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"id\": \"9b98a5f4-c527-14f6-91b2-3d345ef9521d\",\n  \"buyerEmail\": \"string\",\n  \"orderDate\": \"2021-08-24T20:17:22.948Z\",\n  \"items\": [\n    {\n      \"productId\": 4960,\n      \"productName\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 7359.911216462944,\n      \"quantity\": 7439\n    },\n    {\n      \"productId\": 9308,\n      \"productName\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 8595.781106372897,\n      \"quantity\": 2592\n    }\n  ],\n  \"shippingAddress\": {\n    \"firstName\": \"string\",\n    \"lastName\": \"string\",\n    \"street\": \"string\",\n    \"city\": \"string\",\n    \"countery\": \"string\"\n  },\n  \"deliveryMethod\": \"string\",\n  \"status\": \"string\",\n  \"subTotal\": 6329.9735232994535,\n  \"deliveryCost\": 4964.754809088346,\n  \"total\": 4941.064734380256\n}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "/api/Order",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"cartId\": \"string\",\n  \"deliveryMethodId\": 8392,\n  \"shippingAddresss\": {\n    \"firstName\": \"string\",\n    \"lastName\": \"string\",\n    \"street\": \"string\",\n    \"city\": \"string\",\n    \"countery\": \"string\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/Order?email=string",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Order"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "string"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"cartId\": \"string\",\n  \"deliveryMethodId\": 8392,\n  \"shippingAddresss\": {\n    \"firstName\": \"string\",\n    \"lastName\": \"string\",\n    \"street\": \"string\",\n    \"city\": \"string\",\n    \"countery\": \"string\"\n  }\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Order?email=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Order"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"id\": \"9b98a5f4-c527-14f6-91b2-3d345ef9521d\",\n  \"buyerEmail\": \"string\",\n  \"orderDate\": \"2021-08-24T20:17:22.948Z\",\n  \"items\": [\n    {\n      \"productId\": 4960,\n      \"productName\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 7359.911216462944,\n      \"quantity\": 7439\n    },\n    {\n      \"productId\": 9308,\n      \"productName\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 8595.781106372897,\n      \"quantity\": 2592\n    }\n  ],\n  \"shippingAddress\": {\n    \"firstName\": \"string\",\n    \"lastName\": \"string\",\n    \"street\": \"string\",\n    \"city\": \"string\",\n    \"countery\": \"string\"\n  },\n  \"deliveryMethod\": \"string\",\n  \"status\": \"string\",\n  \"subTotal\": 6329.9735232994535,\n  \"deliveryCost\": 4964.754809088346,\n  \"total\": 4941.064734380256\n}"
+                }
+              ]
+            },
+            {
+              "name": "/api/Order",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/Order?email=string",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Order"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "string"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Order?email=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Order"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"id\": \"3e2e5c54-c0c2-417d-692a-faed6b8c2ca7\",\n    \"buyerEmail\": \"string\",\n    \"orderDate\": \"1967-11-02T02:38:15.559Z\",\n    \"items\": [\n      {\n        \"productId\": 3979,\n        \"productName\": \"string\",\n        \"pictureUrl\": \"string\",\n        \"price\": 6569.938228315372,\n        \"quantity\": 581\n      },\n      {\n        \"productId\": 3359,\n        \"productName\": \"string\",\n        \"pictureUrl\": \"string\",\n        \"price\": 3784.5045095744736,\n        \"quantity\": 694\n      }\n    ],\n    \"shippingAddress\": {\n      \"firstName\": \"string\",\n      \"lastName\": \"string\",\n      \"street\": \"string\",\n      \"city\": \"string\",\n      \"countery\": \"string\"\n    },\n    \"deliveryMethod\": \"string\",\n    \"status\": \"string\",\n    \"subTotal\": 7958.204854923925,\n    \"deliveryCost\": 9133.908834226799,\n    \"total\": 6327.973263784706\n  },\n  {\n    \"id\": \"0da7309c-e4d0-8ed5-c87e-1e4f0d11f577\",\n    \"buyerEmail\": \"string\",\n    \"orderDate\": \"1984-05-29T09:59:34.653Z\",\n    \"items\": [\n      {\n        \"productId\": 5524,\n        \"productName\": \"string\",\n        \"pictureUrl\": \"string\",\n        \"price\": 6369.976360074301,\n        \"quantity\": 3832\n      },\n      {\n        \"productId\": 5036,\n        \"productName\": \"string\",\n        \"pictureUrl\": \"string\",\n        \"price\": 3489.680002605335,\n        \"quantity\": 5929\n      }\n    ],\n    \"shippingAddress\": {\n      \"firstName\": \"string\",\n      \"lastName\": \"string\",\n      \"street\": \"string\",\n      \"city\": \"string\",\n      \"countery\": \"string\"\n    },\n    \"deliveryMethod\": \"string\",\n    \"status\": \"string\",\n    \"subTotal\": 8119.972098579669,\n    \"deliveryCost\": 2108.545650386456,\n    \"total\": 4828.3522532323705\n  }\n]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Payment",
+          "item": [
+            {
+              "name": "{cartId}",
+              "item": [
+                {
+                  "name": "/api/Payment/:cartId",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Payment/:cartId",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Payment",
+                        ":cartId"
+                      ],
+                      "variable": [
+                        {
+                          "key": "cartId",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Payment/:cartId",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Payment",
+                            ":cartId"
+                          ],
+                          "variable": [
+                            {
+                              "key": "cartId",
+                              "value": "string"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"id\": \"string\",\n  \"items\": [\n    {\n      \"id\": 5978,\n      \"name\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 4.599239794026192e+306,\n      \"quantity\": 64\n    },\n    {\n      \"id\": 8889,\n      \"name\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 5.637903288851573e+307,\n      \"quantity\": 98\n    }\n  ],\n  \"clientSecret\": \"string\",\n  \"paymentIntentId\": \"string\",\n  \"deliveryMethodId\": 1935,\n  \"shippingPrice\": 3347.2222801469375\n}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Product",
+          "item": [
+            {
+              "name": "Brands",
+              "item": [
+                {
+                  "name": "/api/Product/Brands",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Product/Brands",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Product",
+                        "Brands"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Product/Brands",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Product",
+                            "Brands"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "[\n  {\n    \"id\": 7632,\n    \"name\": \"string\"\n  },\n  {\n    \"id\": 3924,\n    \"name\": \"string\"\n  }\n]"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Types",
+              "item": [
+                {
+                  "name": "/api/Product/Types",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Product/Types",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Product",
+                        "Types"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Product/Types",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Product",
+                            "Types"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "[\n  {\n    \"id\": 7632,\n    \"name\": \"string\"\n  },\n  {\n    \"id\": 3924,\n    \"name\": \"string\"\n  }\n]"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "{id}",
+              "item": [
+                {
+                  "name": "/api/Product/:id",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Product/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Product",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6117"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Product/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Product",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6117"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"id\": 6824,\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"pictureUrl\": \"string\",\n  \"price\": 1270.189456747275,\n  \"brandName\": \"string\",\n  \"typeName\": \"string\"\n}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "/api/Product",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/Product?brandId=6117&typeId=6117&searchValue=string&sort=4&PageIndex=6117&pageSize=6117",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Product"
+                  ],
+                  "query": [
+                    {
+                      "key": "brandId",
+                      "value": "6117"
+                    },
+                    {
+                      "key": "typeId",
+                      "value": "6117"
+                    },
+                    {
+                      "key": "searchValue",
+                      "value": "string"
+                    },
+                    {
+                      "key": "sort",
+                      "value": "4"
+                    },
+                    {
+                      "key": "PageIndex",
+                      "value": "6117"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "6117"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Product?brandId=6117&typeId=6117&searchValue=string&sort=4&PageIndex=6117&pageSize=6117",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Product"
+                      ],
+                      "query": [
+                        {
+                          "key": "brandId",
+                          "value": "6117"
+                        },
+                        {
+                          "key": "typeId",
+                          "value": "6117"
+                        },
+                        {
+                          "key": "searchValue",
+                          "value": "string"
+                        },
+                        {
+                          "key": "sort",
+                          "value": "4"
+                        },
+                        {
+                          "key": "PageIndex",
+                          "value": "6117"
+                        },
+                        {
+                          "key": "pageSize",
+                          "value": "6117"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"data\": [\n    {\n      \"id\": 6886,\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 4127.330688695209,\n      \"brandName\": \"string\",\n      \"typeName\": \"string\"\n    },\n    {\n      \"id\": 1302,\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"pictureUrl\": \"string\",\n      \"price\": 23.19032634927165,\n      \"brandName\": \"string\",\n      \"typeName\": \"string\"\n    }\n  ],\n  \"pageIndex\": 716,\n  \"pageSize\": 3743,\n  \"totalCount\": 2715\n}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "/"
+    }
+  ]
+}

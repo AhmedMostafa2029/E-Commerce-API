@@ -154,6 +154,35 @@ Contains:
 
 ---
 
+## 📸 API Preview
+
+### Swagger
+
+![Swagger](assets/images/swagger-home.png)
+
+### Authentication
+
+![Authentication](assets/images/authentication-endpoints1.png)
+![Authentication](assets/images/authentication-endpoints.png)
+
+### Products
+
+![Products](assets/images/product-endpoints.png)
+
+### Cart
+
+![Cart](assets/images/cart-endpoints.png)
+
+### Orders
+
+![Orders](assets/images/order-endpoints.png)
+
+### Payment
+
+![Payment](assets/images/payment-endpoints.png)
+
+---
+
 # 🔐 Authentication
 
 Authentication is implemented using **JWT Bearer Token**.
@@ -240,14 +269,6 @@ dotnet restore
 
 ---
 
-## Update Database
-
-```bash
-dotnet ef database update
-```
-
----
-
 ## Run
 
 ```bash
@@ -279,13 +300,21 @@ Create your own configuration values before running the project.
 
 ---
 
-# 📬 Main API Modules
+## 📬 API Documentation
 
 - Authentication
 - Products
 - Cart
 - Orders
-- Payments
+- Payment
+
+Interactive documentation is available through Swagger.
+
+---
+
+## 📮 Postman Collection
+
+The Postman collection is available inside the `postman` folder.
 
 ---
 
