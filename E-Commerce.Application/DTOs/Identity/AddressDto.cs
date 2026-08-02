@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace E_Commerce.Application.DTOs.Identity
+{
+    public class AddressDto
+    {
+        public string FirstName { get; set; } = default!;
+        public string LastName { get; set; } = default!;
+        public string Street { get; set; } = default!;
+        public string City { get; set; } = default!;
+        public string Countery { get; set; } = default!;
+    }
+}

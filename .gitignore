@@ -1,0 +1,29 @@
+# Build
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.rsuser
+*.suo
+*.csproj.user
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# Local Settings
+appsettings.Development.json
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Publish
+publish/
