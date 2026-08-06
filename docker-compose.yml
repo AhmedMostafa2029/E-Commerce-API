@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  api:
+    image: ${DOCKERHUB_USERNAME}/ecommerce-api:latest
+    container_name: ecommerce_api
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__StoreDbConnection=Server=sqlserver;Database=ECommerceDb;User Id=sa;Password=YourStrong@Password123;TrustServerCertificate=True;
+      - ConnectionStrings__IdentityConnection=Server=sqlserver;Database=ECommerceDb;User Id=sa;Password=YourStrong@Password123;TrustServerCertificate=True;
+      - Redis__ConnectionString=redis:6379
+    depends_on:
+      - sqlserver
+      - redis
+    networks:
+      - ecommerce_net
+
+  sqlserver:
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    container_name: sqlserver
+    restart: unless-stopped
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourStrong@Password123
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql_data:/var/opt/mssql
+    networks:
+      - ecommerce_net
+
+  redis:
+    image: redis:alpine
+    container_name: redis_cache
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    networks:
+      - ecommerce_net
+
+volumes:
+  mssql_data:
+
+networks:
+  ecommerce_net:
+    driver: bridge
